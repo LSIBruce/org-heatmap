@@ -204,5 +204,5 @@ Node.js LTS is needed only on the developer machine for the tools. The page has 
 - **Color breaks:** the defaults assume small counts. Need the total organization count and the largest single-region count to set breaks that read well.
 - **Tithely embed block behavior** (task 1.1, needs someone in the Tithely admin): does an external iframe render, does its inline `style` survive, and does a `<script>` in the block run? The design assumes iframe yes, style yes, script no. Only the optional height listener depends on the answer.
 - **Disputed-border depiction:** the script follows ISO 3166-1 for Somaliland and Northern Cyprus and leaves Natural Earth's default elsewhere (Taiwan, Kosovo, Western Sahara, and Palestine all have ISO codes and stay as drawn; Crimea and Kashmir follow Natural Earth). Review the rendered world before launch.
-- **GitHub account:** personal or organizational, and the repository name, which determines the Pages URL.
+- ~~**GitHub account**~~ Resolved 2026-09-07: public repository `LSIBruce/org-heatmap`, Pages at `https://lsibruce.github.io/org-heatmap/`.
 - **Website column:** captured now; whether to surface it as a link in the panel is a cheap follow-up.

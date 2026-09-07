@@ -34,11 +34,11 @@ Changing any of these is a commit to `config.js`; nothing else needs editing.
 
 ## Embedding in the website
 
-Paste this into a Tithely embed block, replacing the URL with the GitHub Pages URL of this repository:
+The page is live at <https://lsibruce.github.io/org-heatmap/>. Paste this into a Tithely embed block:
 
 ```html
 <iframe
-  src="https://YOUR-ACCOUNT.github.io/YOUR-REPO/"
+  src="https://lsibruce.github.io/org-heatmap/"
   title="Map of partner organizations by country and region"
   width="100%"
   style="height: clamp(360px, 70vh, 720px); border: 0; display: block;"

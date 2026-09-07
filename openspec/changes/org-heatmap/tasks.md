@@ -81,8 +81,8 @@
 
 ## 11. Publish to GitHub Pages
 
-- [ ] 11.1 Create the public GitHub repository (account and name per Open Questions); push `main`.
-- [ ] 11.2 Enable GitHub Pages from `main` root; confirm the Pages URL loads, fetches the sheet, and serves `data/regions/KE.json` with a 200.
+- [x] 11.1 Create the public GitHub repository (account and name per Open Questions); push `main`. (`LSIBruce/org-heatmap`, created via the GitHub API with the stored credential, 2026-09-07.)
+- [x] 11.2 Enable GitHub Pages from `main` root; confirm the Pages URL loads, fetches the sheet, and serves `data/regions/KE.json` with a 200. (Verified 2026-09-07: index, config.js, data/world.json and data/regions/KE.json all 200 at https://lsibruce.github.io/org-heatmap/; no X-Frame-Options header.)
 - [x] 11.3 Write `README.md`: what the map is, how data flows, how to regenerate boundaries (`npm run prep`, `npm run validate`), the "regenerate data and re-import Subdivisions together" rule, the config options, and the embed snippet with the optional height listener.
 
 ## 12. Embed in Tithely and smoke
