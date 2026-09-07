@@ -1,0 +1,536 @@
+﻿# Countries lookup generated from Natural Earth 5.1.1 on 2026-09-07 by tools/prep-boundaries.mjs. Do not edit by hand; regenerate with npm run prep and re-import this tab together with the map data.
+Key,Name,Alpha-2,Canonical
+afghanistan,Afghanistan,AF,TRUE
+åland,Åland,AX,TRUE
+albania,Albania,AL,TRUE
+algeria,Algeria,DZ,TRUE
+american samoa,American Samoa,AS,TRUE
+andorra,Andorra,AD,TRUE
+angola,Angola,AO,TRUE
+anguilla,Anguilla,AI,TRUE
+antigua and barb.,Antigua and Barb.,AG,TRUE
+argentina,Argentina,AR,TRUE
+armenia,Armenia,AM,TRUE
+aruba,Aruba,AW,TRUE
+australia,Australia,AU,TRUE
+austria,Austria,AT,TRUE
+azerbaijan,Azerbaijan,AZ,TRUE
+bahamas,Bahamas,BS,TRUE
+bahrain,Bahrain,BH,TRUE
+bangladesh,Bangladesh,BD,TRUE
+barbados,Barbados,BB,TRUE
+belarus,Belarus,BY,TRUE
+belgium,Belgium,BE,TRUE
+belize,Belize,BZ,TRUE
+benin,Benin,BJ,TRUE
+bermuda,Bermuda,BM,TRUE
+bhutan,Bhutan,BT,TRUE
+bolivia,Bolivia,BO,TRUE
+bosnia and herz.,Bosnia and Herz.,BA,TRUE
+botswana,Botswana,BW,TRUE
+br. indian ocean ter.,Br. Indian Ocean Ter.,IO,TRUE
+brazil,Brazil,BR,TRUE
+british virgin is.,British Virgin Is.,VG,TRUE
+brunei,Brunei,BN,TRUE
+bulgaria,Bulgaria,BG,TRUE
+burkina faso,Burkina Faso,BF,TRUE
+burundi,Burundi,BI,TRUE
+cabo verde,Cabo Verde,CV,TRUE
+cambodia,Cambodia,KH,TRUE
+cameroon,Cameroon,CM,TRUE
+canada,Canada,CA,TRUE
+cayman is.,Cayman Is.,KY,TRUE
+central african rep.,Central African Rep.,CF,TRUE
+chad,Chad,TD,TRUE
+chile,Chile,CL,TRUE
+china,China,CN,TRUE
+colombia,Colombia,CO,TRUE
+comoros,Comoros,KM,TRUE
+congo,Congo,CG,TRUE
+cook is.,Cook Is.,CK,TRUE
+costa rica,Costa Rica,CR,TRUE
+côte d'ivoire,Côte d'Ivoire,CI,TRUE
+croatia,Croatia,HR,TRUE
+cuba,Cuba,CU,TRUE
+curaçao,Curaçao,CW,TRUE
+cyprus,Cyprus,CY,TRUE
+czechia,Czechia,CZ,TRUE
+dem. rep. congo,Dem. Rep. Congo,CD,TRUE
+denmark,Denmark,DK,TRUE
+djibouti,Djibouti,DJ,TRUE
+dominica,Dominica,DM,TRUE
+dominican rep.,Dominican Rep.,DO,TRUE
+ecuador,Ecuador,EC,TRUE
+egypt,Egypt,EG,TRUE
+el salvador,El Salvador,SV,TRUE
+eq. guinea,Eq. Guinea,GQ,TRUE
+eritrea,Eritrea,ER,TRUE
+estonia,Estonia,EE,TRUE
+eswatini,eSwatini,SZ,TRUE
+ethiopia,Ethiopia,ET,TRUE
+faeroe is.,Faeroe Is.,FO,TRUE
+falkland is.,Falkland Is.,FK,TRUE
+fiji,Fiji,FJ,TRUE
+finland,Finland,FI,TRUE
+fr. polynesia,Fr. Polynesia,PF,TRUE
+fr. s. antarctic lands,Fr. S. Antarctic Lands,TF,TRUE
+france,France,FR,TRUE
+gabon,Gabon,GA,TRUE
+gambia,Gambia,GM,TRUE
+georgia,Georgia,GE,TRUE
+germany,Germany,DE,TRUE
+ghana,Ghana,GH,TRUE
+greece,Greece,GR,TRUE
+greenland,Greenland,GL,TRUE
+grenada,Grenada,GD,TRUE
+guam,Guam,GU,TRUE
+guatemala,Guatemala,GT,TRUE
+guernsey,Guernsey,GG,TRUE
+guinea,Guinea,GN,TRUE
+guinea-bissau,Guinea-Bissau,GW,TRUE
+guyana,Guyana,GY,TRUE
+haiti,Haiti,HT,TRUE
+heard i. and mcdonald is.,Heard I. and McDonald Is.,HM,TRUE
+honduras,Honduras,HN,TRUE
+hong kong,Hong Kong,HK,TRUE
+hungary,Hungary,HU,TRUE
+iceland,Iceland,IS,TRUE
+india,India,IN,TRUE
+indonesia,Indonesia,ID,TRUE
+iran,Iran,IR,TRUE
+iraq,Iraq,IQ,TRUE
+ireland,Ireland,IE,TRUE
+isle of man,Isle of Man,IM,TRUE
+israel,Israel,IL,TRUE
+italy,Italy,IT,TRUE
+jamaica,Jamaica,JM,TRUE
+japan,Japan,JP,TRUE
+jersey,Jersey,JE,TRUE
+jordan,Jordan,JO,TRUE
+kazakhstan,Kazakhstan,KZ,TRUE
+kenya,Kenya,KE,TRUE
+kiribati,Kiribati,KI,TRUE
+kosovo,Kosovo,XK,TRUE
+kuwait,Kuwait,KW,TRUE
+kyrgyzstan,Kyrgyzstan,KG,TRUE
+laos,Laos,LA,TRUE
+latvia,Latvia,LV,TRUE
+lebanon,Lebanon,LB,TRUE
+lesotho,Lesotho,LS,TRUE
+liberia,Liberia,LR,TRUE
+libya,Libya,LY,TRUE
+liechtenstein,Liechtenstein,LI,TRUE
+lithuania,Lithuania,LT,TRUE
+luxembourg,Luxembourg,LU,TRUE
+macao,Macao,MO,TRUE
+madagascar,Madagascar,MG,TRUE
+malawi,Malawi,MW,TRUE
+malaysia,Malaysia,MY,TRUE
+maldives,Maldives,MV,TRUE
+mali,Mali,ML,TRUE
+malta,Malta,MT,TRUE
+marshall is.,Marshall Is.,MH,TRUE
+mauritania,Mauritania,MR,TRUE
+mauritius,Mauritius,MU,TRUE
+mexico,Mexico,MX,TRUE
+micronesia,Micronesia,FM,TRUE
+moldova,Moldova,MD,TRUE
+monaco,Monaco,MC,TRUE
+mongolia,Mongolia,MN,TRUE
+montenegro,Montenegro,ME,TRUE
+montserrat,Montserrat,MS,TRUE
+morocco,Morocco,MA,TRUE
+mozambique,Mozambique,MZ,TRUE
+myanmar,Myanmar,MM,TRUE
+n. mariana is.,N. Mariana Is.,MP,TRUE
+namibia,Namibia,NA,TRUE
+nauru,Nauru,NR,TRUE
+nepal,Nepal,NP,TRUE
+netherlands,Netherlands,NL,TRUE
+new caledonia,New Caledonia,NC,TRUE
+new zealand,New Zealand,NZ,TRUE
+nicaragua,Nicaragua,NI,TRUE
+niger,Niger,NE,TRUE
+nigeria,Nigeria,NG,TRUE
+niue,Niue,NU,TRUE
+norfolk island,Norfolk Island,NF,TRUE
+north korea,North Korea,KP,TRUE
+north macedonia,North Macedonia,MK,TRUE
+norway,Norway,NO,TRUE
+oman,Oman,OM,TRUE
+pakistan,Pakistan,PK,TRUE
+palau,Palau,PW,TRUE
+palestine,Palestine,PS,TRUE
+panama,Panama,PA,TRUE
+papua new guinea,Papua New Guinea,PG,TRUE
+paraguay,Paraguay,PY,TRUE
+peru,Peru,PE,TRUE
+philippines,Philippines,PH,TRUE
+pitcairn is.,Pitcairn Is.,PN,TRUE
+poland,Poland,PL,TRUE
+portugal,Portugal,PT,TRUE
+puerto rico,Puerto Rico,PR,TRUE
+qatar,Qatar,QA,TRUE
+romania,Romania,RO,TRUE
+russia,Russia,RU,TRUE
+rwanda,Rwanda,RW,TRUE
+s. geo. and the is.,S. Geo. and the Is.,GS,TRUE
+s. sudan,S. Sudan,SS,TRUE
+saint helena,Saint Helena,SH,TRUE
+saint lucia,Saint Lucia,LC,TRUE
+samoa,Samoa,WS,TRUE
+san marino,San Marino,SM,TRUE
+são tomé and principe,São Tomé and Principe,ST,TRUE
+saudi arabia,Saudi Arabia,SA,TRUE
+senegal,Senegal,SN,TRUE
+serbia,Serbia,RS,TRUE
+seychelles,Seychelles,SC,TRUE
+sierra leone,Sierra Leone,SL,TRUE
+singapore,Singapore,SG,TRUE
+sint maarten,Sint Maarten,SX,TRUE
+slovakia,Slovakia,SK,TRUE
+slovenia,Slovenia,SI,TRUE
+solomon is.,Solomon Is.,SB,TRUE
+somalia,Somalia,SO,TRUE
+south africa,South Africa,ZA,TRUE
+south korea,South Korea,KR,TRUE
+spain,Spain,ES,TRUE
+sri lanka,Sri Lanka,LK,TRUE
+st-barthélemy,St-Barthélemy,BL,TRUE
+st-martin,St-Martin,MF,TRUE
+st. kitts and nevis,St. Kitts and Nevis,KN,TRUE
+st. pierre and miquelon,St. Pierre and Miquelon,PM,TRUE
+st. vin. and gren.,St. Vin. and Gren.,VC,TRUE
+sudan,Sudan,SD,TRUE
+suriname,Suriname,SR,TRUE
+sweden,Sweden,SE,TRUE
+switzerland,Switzerland,CH,TRUE
+syria,Syria,SY,TRUE
+taiwan,Taiwan,TW,TRUE
+tajikistan,Tajikistan,TJ,TRUE
+tanzania,Tanzania,TZ,TRUE
+thailand,Thailand,TH,TRUE
+timor-leste,Timor-Leste,TL,TRUE
+togo,Togo,TG,TRUE
+tonga,Tonga,TO,TRUE
+trinidad and tobago,Trinidad and Tobago,TT,TRUE
+tunisia,Tunisia,TN,TRUE
+turkey,Turkey,TR,TRUE
+turkmenistan,Turkmenistan,TM,TRUE
+turks and caicos is.,Turks and Caicos Is.,TC,TRUE
+tuvalu,Tuvalu,TV,TRUE
+u.s. virgin is.,U.S. Virgin Is.,VI,TRUE
+uganda,Uganda,UG,TRUE
+ukraine,Ukraine,UA,TRUE
+united arab emirates,United Arab Emirates,AE,TRUE
+united kingdom,United Kingdom,GB,TRUE
+united states of america,United States of America,US,TRUE
+uruguay,Uruguay,UY,TRUE
+uzbekistan,Uzbekistan,UZ,TRUE
+vanuatu,Vanuatu,VU,TRUE
+vatican,Vatican,VA,TRUE
+venezuela,Venezuela,VE,TRUE
+vietnam,Vietnam,VN,TRUE
+w. sahara,W. Sahara,EH,TRUE
+wallis and futuna is.,Wallis and Futuna Is.,WF,TRUE
+yemen,Yemen,YE,TRUE
+zambia,Zambia,ZM,TRUE
+zimbabwe,Zimbabwe,ZW,TRUE
+islamic state of afghanistan,Islamic State of Afghanistan,AF,FALSE
+aland,Aland,AX,FALSE
+åland islands,Åland Islands,AX,FALSE
+aland islands,Aland Islands,AX,FALSE
+republic of albania,Republic of Albania,AL,FALSE
+people's democratic republic of algeria,People's Democratic Republic of Algeria,DZ,FALSE
+peoples democratic republic of algeria,Peoples Democratic Republic of Algeria,DZ,FALSE
+principality of andorra,Principality of Andorra,AD,FALSE
+people's republic of angola,People's Republic of Angola,AO,FALSE
+peoples republic of angola,Peoples Republic of Angola,AO,FALSE
+antigua and barbuda,Antigua and Barbuda,AG,FALSE
+argentine republic,Argentine Republic,AR,FALSE
+republic of armenia,Republic of Armenia,AM,FALSE
+indian ocean ter.,Indian Ocean Ter.,AU,FALSE
+ashmore and cartier is.,Ashmore and Cartier Is.,AU,FALSE
+indian ocean territories,Indian Ocean Territories,AU,FALSE
+ashmore and cartier islands,Ashmore and Cartier Islands,AU,FALSE
+commonwealth of australia,Commonwealth of Australia,AU,FALSE
+territory of ashmore and cartier islands,Territory of Ashmore and Cartier Islands,AU,FALSE
+australian indian ocean territories,Australian Indian Ocean Territories,AU,FALSE
+republic of austria,Republic of Austria,AT,FALSE
+republic of azerbaijan,Republic of Azerbaijan,AZ,FALSE
+the bahamas,The Bahamas,BS,FALSE
+commonwealth of the bahamas,Commonwealth of the Bahamas,BS,FALSE
+kingdom of bahrain,Kingdom of Bahrain,BH,FALSE
+people's republic of bangladesh,People's Republic of Bangladesh,BD,FALSE
+peoples republic of bangladesh,Peoples Republic of Bangladesh,BD,FALSE
+republic of belarus,Republic of Belarus,BY,FALSE
+kingdom of belgium,Kingdom of Belgium,BE,FALSE
+republic of benin,Republic of Benin,BJ,FALSE
+the bermudas or somers isles,The Bermudas or Somers Isles,BM,FALSE
+kingdom of bhutan,Kingdom of Bhutan,BT,FALSE
+plurinational state of bolivia,Plurinational State of Bolivia,BO,FALSE
+bosnia and herzegovina,Bosnia and Herzegovina,BA,FALSE
+republic of botswana,Republic of Botswana,BW,FALSE
+british indian ocean territory,British Indian Ocean Territory,IO,FALSE
+federative republic of brazil,Federative Republic of Brazil,BR,FALSE
+british virgin islands,British Virgin Islands,VG,FALSE
+brunei darussalam,Brunei Darussalam,BN,FALSE
+negara brunei darussalam,Negara Brunei Darussalam,BN,FALSE
+republic of bulgaria,Republic of Bulgaria,BG,FALSE
+republic of burundi,Republic of Burundi,BI,FALSE
+republic of cabo verde,Republic of Cabo Verde,CV,FALSE
+cape verde,Cape Verde,CV,FALSE
+kingdom of cambodia,Kingdom of Cambodia,KH,FALSE
+republic of cameroon,Republic of Cameroon,CM,FALSE
+cayman islands,Cayman Islands,KY,FALSE
+central african republic,Central African Republic,CF,FALSE
+republic of chad,Republic of Chad,TD,FALSE
+republic of chile,Republic of Chile,CL,FALSE
+people's republic of china,People's Republic of China,CN,FALSE
+peoples republic of china,Peoples Republic of China,CN,FALSE
+republic of colombia,Republic of Colombia,CO,FALSE
+union of the comoros,Union of the Comoros,KM,FALSE
+republic of the congo,Republic of the Congo,CG,FALSE
+congo-brazzaville,Congo-Brazzaville,CG,FALSE
+republic of congo,Republic of Congo,CG,FALSE
+cook islands,Cook Islands,CK,FALSE
+republic of costa rica,Republic of Costa Rica,CR,FALSE
+cote d'ivoire,Cote d'Ivoire,CI,FALSE
+côte divoire,Côte dIvoire,CI,FALSE
+cote divoire,Cote dIvoire,CI,FALSE
+ivory coast,Ivory Coast,CI,FALSE
+republic of ivory coast,Republic of Ivory Coast,CI,FALSE
+republic of croatia,Republic of Croatia,HR,FALSE
+republic of cuba,Republic of Cuba,CU,FALSE
+curacao,Curacao,CW,FALSE
+n. cyprus,N. Cyprus,CY,FALSE
+northern cyprus,Northern Cyprus,CY,FALSE
+republic of cyprus,Republic of Cyprus,CY,FALSE
+turkish republic of northern cyprus,Turkish Republic of Northern Cyprus,CY,FALSE
+czech republic,Czech Republic,CZ,FALSE
+democratic republic of the congo,Democratic Republic of the Congo,CD,FALSE
+drc,DRC,CD,FALSE
+dr congo,DR Congo,CD,FALSE
+congo-kinshasa,Congo-Kinshasa,CD,FALSE
+democratic republic of congo,Democratic Republic of Congo,CD,FALSE
+kingdom of denmark,Kingdom of Denmark,DK,FALSE
+republic of djibouti,Republic of Djibouti,DJ,FALSE
+commonwealth of dominica,Commonwealth of Dominica,DM,FALSE
+dominican republic,Dominican Republic,DO,FALSE
+republic of ecuador,Republic of Ecuador,EC,FALSE
+arab republic of egypt,Arab Republic of Egypt,EG,FALSE
+republic of el salvador,Republic of El Salvador,SV,FALSE
+equatorial guinea,Equatorial Guinea,GQ,FALSE
+republic of equatorial guinea,Republic of Equatorial Guinea,GQ,FALSE
+state of eritrea,State of Eritrea,ER,FALSE
+republic of estonia,Republic of Estonia,EE,FALSE
+kingdom of eswatini,Kingdom of eSwatini,SZ,FALSE
+swaziland,Swaziland,SZ,FALSE
+federal democratic republic of ethiopia,Federal Democratic Republic of Ethiopia,ET,FALSE
+faeroe islands,Faeroe Islands,FO,FALSE
+faroe islands,Faroe Islands,FO,FALSE
+føroyar is. (faeroe is.),Føroyar Is. (Faeroe Is.),FO,FALSE
+foroyar is. (faeroe is.),Foroyar Is. (Faeroe Is.),FO,FALSE
+falkland islands / malvinas,Falkland Islands / Malvinas,FK,FALSE
+falkland islands,Falkland Islands,FK,FALSE
+republic of fiji,Republic of Fiji,FJ,FALSE
+republic of finland,Republic of Finland,FI,FALSE
+french polynesia,French Polynesia,PF,FALSE
+french southern and antarctic lands,French Southern and Antarctic Lands,TF,FALSE
+territory of the french southern and antarctic lands,Territory of the French Southern and Antarctic Lands,TF,FALSE
+french republic,French Republic,FR,FALSE
+gabonese republic,Gabonese Republic,GA,FALSE
+the gambia,The Gambia,GM,FALSE
+republic of the gambia,Republic of the Gambia,GM,FALSE
+federal republic of germany,Federal Republic of Germany,DE,FALSE
+republic of ghana,Republic of Ghana,GH,FALSE
+hellenic republic,Hellenic Republic,GR,FALSE
+territory of guam,Territory of Guam,GU,FALSE
+republic of guatemala,Republic of Guatemala,GT,FALSE
+bailiwick of guernsey,Bailiwick of Guernsey,GG,FALSE
+republic of guinea,Republic of Guinea,GN,FALSE
+republic of guinea-bissau,Republic of Guinea-Bissau,GW,FALSE
+co-operative republic of guyana,Co-operative Republic of Guyana,GY,FALSE
+republic of haiti,Republic of Haiti,HT,FALSE
+heard i. and mcdonald islands,Heard I. and McDonald Islands,HM,FALSE
+heard island and mcdonald islands,Heard Island and McDonald Islands,HM,FALSE
+territory of heard island and mcdonald islands,Territory of Heard Island and McDonald Islands,HM,FALSE
+republic of honduras,Republic of Honduras,HN,FALSE
+hong kong s.a.r.,Hong Kong S.A.R.,HK,FALSE
+"hong kong special administrative region, prc","Hong Kong Special Administrative Region, PRC",HK,FALSE
+republic of hungary,Republic of Hungary,HU,FALSE
+republic of iceland,Republic of Iceland,IS,FALSE
+republic of india,Republic of India,IN,FALSE
+republic of indonesia,Republic of Indonesia,ID,FALSE
+islamic republic of iran,Islamic Republic of Iran,IR,FALSE
+republic of iraq,Republic of Iraq,IQ,FALSE
+state of israel,State of Israel,IL,FALSE
+italian republic,Italian Republic,IT,FALSE
+bailiwick of jersey,Bailiwick of Jersey,JE,FALSE
+hashemite kingdom of jordan,Hashemite Kingdom of Jordan,JO,FALSE
+republic of kazakhstan,Republic of Kazakhstan,KZ,FALSE
+republic of kenya,Republic of Kenya,KE,FALSE
+republic of kiribati,Republic of Kiribati,KI,FALSE
+republic of kosovo,Republic of Kosovo,XK,FALSE
+state of kuwait,State of Kuwait,KW,FALSE
+kyrgyz republic,Kyrgyz Republic,KG,FALSE
+lao pdr,Lao PDR,LA,FALSE
+lao people's democratic republic,Lao People's Democratic Republic,LA,FALSE
+lao peoples democratic republic,Lao Peoples Democratic Republic,LA,FALSE
+republic of latvia,Republic of Latvia,LV,FALSE
+lebanese republic,Lebanese Republic,LB,FALSE
+kingdom of lesotho,Kingdom of Lesotho,LS,FALSE
+republic of liberia,Republic of Liberia,LR,FALSE
+principality of liechtenstein,Principality of Liechtenstein,LI,FALSE
+republic of lithuania,Republic of Lithuania,LT,FALSE
+grand duchy of luxembourg,Grand Duchy of Luxembourg,LU,FALSE
+macao s.a.r,Macao S.A.R,MO,FALSE
+"macao special administrative region, prc","Macao Special Administrative Region, PRC",MO,FALSE
+macau,Macau,MO,FALSE
+republic of madagascar,Republic of Madagascar,MG,FALSE
+republic of malawi,Republic of Malawi,MW,FALSE
+republic of maldives,Republic of Maldives,MV,FALSE
+republic of mali,Republic of Mali,ML,FALSE
+republic of malta,Republic of Malta,MT,FALSE
+marshall islands,Marshall Islands,MH,FALSE
+republic of the marshall islands,Republic of the Marshall Islands,MH,FALSE
+islamic republic of mauritania,Islamic Republic of Mauritania,MR,FALSE
+republic of mauritius,Republic of Mauritius,MU,FALSE
+united mexican states,United Mexican States,MX,FALSE
+federated states of micronesia,Federated States of Micronesia,FM,FALSE
+republic of moldova,Republic of Moldova,MD,FALSE
+principality of monaco,Principality of Monaco,MC,FALSE
+kingdom of morocco,Kingdom of Morocco,MA,FALSE
+republic of mozambique,Republic of Mozambique,MZ,FALSE
+republic of the union of myanmar,Republic of the Union of Myanmar,MM,FALSE
+burma,Burma,MM,FALSE
+northern mariana islands,Northern Mariana Islands,MP,FALSE
+commonwealth of the northern mariana islands,Commonwealth of the Northern Mariana Islands,MP,FALSE
+republic of namibia,Republic of Namibia,NA,FALSE
+republic of nauru,Republic of Nauru,NR,FALSE
+kingdom of the netherlands,Kingdom of the Netherlands,NL,FALSE
+holland,Holland,NL,FALSE
+the netherlands,The Netherlands,NL,FALSE
+republic of nicaragua,Republic of Nicaragua,NI,FALSE
+republic of niger,Republic of Niger,NE,FALSE
+federal republic of nigeria,Federal Republic of Nigeria,NG,FALSE
+territory of norfolk island,Territory of Norfolk Island,NF,FALSE
+dem. rep. korea,Dem. Rep. Korea,KP,FALSE
+democratic people's republic of korea,Democratic People's Republic of Korea,KP,FALSE
+democratic peoples republic of korea,Democratic Peoples Republic of Korea,KP,FALSE
+"korea, north","Korea, North",KP,FALSE
+republic of north macedonia,Republic of North Macedonia,MK,FALSE
+macedonia,Macedonia,MK,FALSE
+kingdom of norway,Kingdom of Norway,NO,FALSE
+sultanate of oman,Sultanate of Oman,OM,FALSE
+islamic republic of pakistan,Islamic Republic of Pakistan,PK,FALSE
+republic of palau,Republic of Palau,PW,FALSE
+west bank and gaza,West Bank and Gaza,PS,FALSE
+west bank,West Bank,PS,FALSE
+gaza,Gaza,PS,FALSE
+palestinian territories,Palestinian Territories,PS,FALSE
+republic of panama,Republic of Panama,PA,FALSE
+independent state of papua new guinea,Independent State of Papua New Guinea,PG,FALSE
+republic of paraguay,Republic of Paraguay,PY,FALSE
+republic of peru,Republic of Peru,PE,FALSE
+republic of the philippines,Republic of the Philippines,PH,FALSE
+pitcairn islands,Pitcairn Islands,PN,FALSE
+"pitcairn, henderson, ducie and oeno islands","Pitcairn, Henderson, Ducie and Oeno Islands",PN,FALSE
+republic of poland,Republic of Poland,PL,FALSE
+portuguese republic,Portuguese Republic,PT,FALSE
+commonwealth of puerto rico,Commonwealth of Puerto Rico,PR,FALSE
+state of qatar,State of Qatar,QA,FALSE
+russian federation,Russian Federation,RU,FALSE
+republic of rwanda,Republic of Rwanda,RW,FALSE
+south georgia and the islands,South Georgia and the Islands,GS,FALSE
+south georgia and the south sandwich islands,South Georgia and the South Sandwich Islands,GS,FALSE
+south sudan,South Sudan,SS,FALSE
+republic of south sudan,Republic of South Sudan,SS,FALSE
+independent state of samoa,Independent State of Samoa,WS,FALSE
+republic of san marino,Republic of San Marino,SM,FALSE
+sao tome and principe,Sao Tome and Principe,ST,FALSE
+democratic republic of são tomé and principe,Democratic Republic of São Tomé and Principe,ST,FALSE
+democratic republic of sao tome and principe,Democratic Republic of Sao Tome and Principe,ST,FALSE
+são tomé and príncipe,São Tomé and Príncipe,ST,FALSE
+kingdom of saudi arabia,Kingdom of Saudi Arabia,SA,FALSE
+republic of senegal,Republic of Senegal,SN,FALSE
+republic of serbia,Republic of Serbia,RS,FALSE
+republic of seychelles,Republic of Seychelles,SC,FALSE
+republic of sierra leone,Republic of Sierra Leone,SL,FALSE
+republic of singapore,Republic of Singapore,SG,FALSE
+sint maarten (dutch part),Sint Maarten (Dutch part),SX,FALSE
+slovak republic,Slovak Republic,SK,FALSE
+republic of slovenia,Republic of Slovenia,SI,FALSE
+solomon islands,Solomon Islands,SB,FALSE
+somaliland,Somaliland,SO,FALSE
+federal republic of somalia,Federal Republic of Somalia,SO,FALSE
+republic of somaliland,Republic of Somaliland,SO,FALSE
+republic of south africa,Republic of South Africa,ZA,FALSE
+republic of korea,Republic of Korea,KR,FALSE
+"korea, south","Korea, South",KR,FALSE
+kingdom of spain,Kingdom of Spain,ES,FALSE
+democratic socialist republic of sri lanka,Democratic Socialist Republic of Sri Lanka,LK,FALSE
+st-barthelemy,St-Barthelemy,BL,FALSE
+saint-barthélemy,Saint-Barthélemy,BL,FALSE
+saint-barthelemy,Saint-Barthelemy,BL,FALSE
+saint barthelemy,Saint Barthelemy,BL,FALSE
+saint barthélemy,Saint Barthélemy,BL,FALSE
+saint-martin,Saint-Martin,MF,FALSE
+saint martin,Saint Martin,MF,FALSE
+saint-martin (french part),Saint-Martin (French part),MF,FALSE
+saint kitts and nevis,Saint Kitts and Nevis,KN,FALSE
+federation of saint kitts and nevis,Federation of Saint Kitts and Nevis,KN,FALSE
+saint pierre and miquelon,Saint Pierre and Miquelon,PM,FALSE
+saint vincent and the grenadines,Saint Vincent and the Grenadines,VC,FALSE
+republic of the sudan,Republic of the Sudan,SD,FALSE
+republic of suriname,Republic of Suriname,SR,FALSE
+kingdom of sweden,Kingdom of Sweden,SE,FALSE
+swiss confederation,Swiss Confederation,CH,FALSE
+syrian arab republic,Syrian Arab Republic,SY,FALSE
+republic of tajikistan,Republic of Tajikistan,TJ,FALSE
+united republic of tanzania,United Republic of Tanzania,TZ,FALSE
+kingdom of thailand,Kingdom of Thailand,TH,FALSE
+east timor,East Timor,TL,FALSE
+democratic republic of timor-leste,Democratic Republic of Timor-Leste,TL,FALSE
+togolese republic,Togolese Republic,TG,FALSE
+kingdom of tonga,Kingdom of Tonga,TO,FALSE
+republic of trinidad and tobago,Republic of Trinidad and Tobago,TT,FALSE
+republic of tunisia,Republic of Tunisia,TN,FALSE
+republic of turkey,Republic of Turkey,TR,FALSE
+türkiye,Türkiye,TR,FALSE
+turkiye,Turkiye,TR,FALSE
+turks and caicos islands,Turks and Caicos Islands,TC,FALSE
+united states virgin islands,United States Virgin Islands,VI,FALSE
+virgin islands of the united states,Virgin Islands of the United States,VI,FALSE
+republic of uganda,Republic of Uganda,UG,FALSE
+uae,UAE,AE,FALSE
+united kingdom of great britain and northern ireland,United Kingdom of Great Britain and Northern Ireland,GB,FALSE
+uk,UK,GB,FALSE
+u.k.,U.K.,GB,FALSE
+great britain,Great Britain,GB,FALSE
+britain,Britain,GB,FALSE
+england,England,GB,FALSE
+scotland,Scotland,GB,FALSE
+wales,Wales,GB,FALSE
+northern ireland,Northern Ireland,GB,FALSE
+united states,United States,US,FALSE
+usa,USA,US,FALSE
+u.s.,U.S.,US,FALSE
+u.s.a.,U.S.A.,US,FALSE
+america,America,US,FALSE
+oriental republic of uruguay,Oriental Republic of Uruguay,UY,FALSE
+republic of uzbekistan,Republic of Uzbekistan,UZ,FALSE
+republic of vanuatu,Republic of Vanuatu,VU,FALSE
+state of the vatican city,State of the Vatican City,VA,FALSE
+vatican city,Vatican City,VA,FALSE
+holy see,Holy See,VA,FALSE
+bolivarian republic of venezuela,Bolivarian Republic of Venezuela,VE,FALSE
+socialist republic of vietnam,Socialist Republic of Vietnam,VN,FALSE
+viet nam,Viet Nam,VN,FALSE
+western sahara,Western Sahara,EH,FALSE
+sahrawi arab democratic republic,Sahrawi Arab Democratic Republic,EH,FALSE
+wallis and futuna islands,Wallis and Futuna Islands,WF,FALSE
+wallis and futuna,Wallis and Futuna,WF,FALSE
+republic of yemen,Republic of Yemen,YE,FALSE
+republic of zambia,Republic of Zambia,ZM,FALSE
+republic of zimbabwe,Republic of Zimbabwe,ZW,FALSE

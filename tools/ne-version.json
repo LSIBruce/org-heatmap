@@ -1,0 +1,31 @@
+{
+  "naturalEarthVersion": "5.1.1",
+  "sources": {
+    "adm0": "https://naciscdn.org/naturalearth/50m/cultural/ne_50m_admin_0_countries.zip",
+    "adm1": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_1_states_provinces.zip"
+  },
+  "generatedAt": "2026-09-07T15:36:09.435Z",
+  "mapshaperVersion": "0.6.121",
+  "worldSimplify": "10%",
+  "regionsSimplify": "20%",
+  "quantization": "1e4",
+  "excludedAdmin0": [
+    "ATA"
+  ],
+  "admin0Remap": {
+    "SOL": "SO",
+    "CYN": "CY"
+  },
+  "subdivisionNameOverrides": {
+    "MG-A": "Toamasina",
+    "MG-D": "Antsiranana",
+    "MG-F": "Fianarantsoa",
+    "MG-M": "Mahajanga",
+    "MG-T": "Antananarivo",
+    "MG-U": "Toliara",
+    "BA-BIH": "Federation of Bosnia and Herzegovina",
+    "IE-D": "Dublin",
+    "IE-TA": "Tipperary",
+    "PH-MNL": "Metro Manila"
+  }
+}

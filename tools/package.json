@@ -1,0 +1,14 @@
+{
+  "name": "org-heatmap-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Data preparation and validation tools for the organization heatmap. Not part of the served page.",
+  "type": "module",
+  "scripts": {
+    "prep": "node prep-boundaries.mjs",
+    "validate": "node validate-data.mjs"
+  },
+  "devDependencies": {
+    "mapshaper": "^0.6.0"
+  }
+}

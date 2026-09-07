@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# data-prep scratch (downloaded Natural Earth archives, intermediate files)
+tools/tmp/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# personal Claude Code overrides
+.claude/settings.local.json
