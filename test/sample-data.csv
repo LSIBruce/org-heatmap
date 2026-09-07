@@ -1,0 +1,42 @@
+organization,Country,State / Province,Country Code,Subdivision Code,region code,Website,Notes
+Hope Center,United States of America,Texas,US,US-TX,US-TX,https://example.org/hope,
+hope center ,United States of America,Texas,US,US-TX,US-TX,,duplicate of the row above (case and whitespace)
+Hope Center,United States of America,Oklahoma,US,US-OK,US-OK,,same org in a second state
+Lone Star Outreach,United States of America,Texas,US,US-TX,US-TX,,
+Bluebonnet Ministries,United States of America,Texas,US,US-TX,US-TX,,
+Prairie Fellowship,United States of America,Kansas,US,US-KS,US-KS,,
+New Life Fellowship,United States of America,,US,,US,,US org with no state (unassigned)
+Grace Mission,Canada,Ontario,CA,CA-ON,CA-ON,,
+Northern Lights Church,Canada,Ontario,CA,CA-ON,CA-ON,,
+Casa Esperanza,Brazil,Sao Paulo,BR,BR-SP,BR-SP,,alias matched in the sheet
+Living Water,Kenya,Nairobi,KE,KE-110,KE-110,,
+Rift Valley Hope,Kenya,Nairobi,KE,KE-110,KE-110,,
+Mombasa Light,Kenya,,KE,,KE,,country only
+Coastal Care,Kenya,,KE,,KE,,country only
+Dublin City Mission,Ireland,Fingal,IE,IE-D,IE-D,,alias into dissolved IE-D
+Antananarivo Outreach,Madagascar,Analamanga,MG,MG-T,MG-T,,alias into dissolved MG-T
+Isla Esperanza,Puerto Rico,,PR,,PR,,country with no regions on the map
+Org One,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Two,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Three,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Four,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Five,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Six,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Seven,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Eight,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Nine,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Ten,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Eleven,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Twelve,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Thirteen,India,Maharashtra,IN,IN-MH,IN-MH,,
+Org Fourteen,India,Maharashtra,IN,IN-MH,IN-MH,,14 orgs to test the tooltip cap
+"Smith, Jones & Co. Ministries",United Kingdom,,GB,,GB,,quoted comma in the name
+,United States of America,Texas,US,US-TX,US-TX,,invalid: empty organization
+Bad Code Org,United States of America,Texas,US,,TX,,invalid: region code fails the pattern
+No Code Org,United States of America,Texas,,,,,invalid: empty region code
+Ghost Region Org,United States of America,Nowhere,US,US-ZZ,US-ZZ,,valid code with no shape on the map
+Ghost Country Org,Atlantis,,ZZ,,ZZ,,valid code with no country on the map
+Pacific Mission,Fiji,,FJ,,FJ,,antimeridian country
+Siberian Hope,Russia,,RU,,RU,,antimeridian country
+,,,,,,,
+,,,,,,,

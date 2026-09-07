@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Embed test harness</title>
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin: 0; font: 16px/1.5 Georgia, serif; color: #333; background: #faf7f2; }
+    .site { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+    .site h1 { font-size: 2rem; }
+    .note { font-size: 0.9rem; color: #666; }
+    code { background: #eee; padding: 1px 4px; }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <h1>A page that stands in for the Tithely site</h1>
+    <p>Paragraph text above the embed block, styled unlike the map, to confirm the iframe isolates the map's styles.</p>
+
+    <!-- BEGIN embed snippet (copy exactly this into the Tithely embed block) -->
+    <iframe
+      id="org-heatmap"
+      src="../index.html"
+      title="Map of partner organizations by country and region"
+      width="100%"
+      style="height: clamp(360px, 70vh, 720px); border: 0; display: block;"
+      loading="lazy"></iframe>
+    <!-- END embed snippet -->
+
+    <p class="note">Frame height in use: <code id="h">?</code>. Toggle the optional listener: <label><input type="checkbox" id="listen"> size the frame from the map's height messages</label></p>
+    <p>Paragraph text below the embed block.</p>
+  </div>
+
+  <script>
+    // Optional height listener. Only useful if the CMS allows scripts in the block.
+    const frame = document.getElementById("org-heatmap");
+    const out = document.getElementById("h");
+    const listen = document.getElementById("listen");
+    let lastHeight = null;
+    window.addEventListener("message", (ev) => {
+      if (!ev.data || ev.data.type !== "org-heatmap:height") return;
+      lastHeight = ev.data.height;
+      if (listen.checked) frame.style.height = ev.data.height + "px";
+      report();
+    });
+    listen.addEventListener("change", () => {
+      frame.style.height = listen.checked && lastHeight ? lastHeight + "px" : "clamp(360px, 70vh, 720px)";
+      report();
+    });
+    function report() { out.textContent = `${frame.getBoundingClientRect().height | 0}px` + (lastHeight ? ` (map asked for ${lastHeight}px)` : " (no message received yet)"); }
+    new ResizeObserver(report).observe(frame);
+    report();
+  </script>
+</body>
+</html>

@@ -21,7 +21,7 @@
 - [x] 3.5 Write `data/countries.json` with `code`, `name`, `hasRegions` for every interactive country.
 - [x] 3.6 Emit `sheet/Countries.csv` with header stamp row, then canonical rows (display name, alpha-2, `Canonical`=TRUE) and alias rows from `NAME`, `NAME_LONG`, `ADMIN`, `FORMAL_EN`, plus accent-stripped variants and a small hand-maintained alias list (e.g. "United States", "USA", "UK").
 - [x] 3.7 Emit `sheet/Subdivisions.csv` with header stamp row and rows of `Country Code`, `Name`, `Code`, `Canonical`, `Key` (lower-cased `country|name`), including aliases from `name`, `name_en`, `name_alt` (split on `|`), `gn_name`, `woe_name`, and accent-stripped variants; de-duplicate on `Key`.
-- [ ] 3.8 Run the script end to end from a clean `tools/tmp/` and commit `data/`, `sheet/*.csv`, and `tools/ne-version.json`.
+- [x] 3.8 Run the script end to end from a clean `tools/tmp/` and commit `data/`, `sheet/*.csv`, and `tools/ne-version.json`.
 
 ## 4. Validation script (`tools/validate-data.mjs`)
 
@@ -41,49 +41,49 @@
 
 ## 6. Page: data layer (`app.js`)
 
-- [ ] 6.1 Create `index.html` with the map container, back control, legend container, panel container, hidden debug container, and script tags for vendor libraries, `config.js`, and `app.js`.
-- [ ] 6.2 Load `data/world.json`, `data/countries.json`, and the sheet CSV in parallel; render a gray world with the data-unavailable message if the CSV fails, and a "no organizations found" message if it yields zero valid rows.
-- [ ] 6.3 Parse the CSV with header matching that is case- and whitespace-insensitive; validate rows against the `Organization` and `Region Code` rules; collect invalid rows with row numbers and reasons.
-- [ ] 6.4 Aggregate distinct organizations (trimmed, case-folded) per country (bare and subdivided rows) and per subdivision; keep a per-country list of unassigned organizations; keep a list of region codes not present in the boundary data.
-- [ ] 6.5 Log invalid rows and unmatched codes to the console; render the debug data-health panel only when `?debug=1` is present.
+- [x] 6.1 Create `index.html` with the map container, back control, legend container, panel container, hidden debug container, and script tags for vendor libraries, `config.js`, and `app.js`.
+- [x] 6.2 Load `data/world.json`, `data/countries.json`, and the sheet CSV in parallel; render a gray world with the data-unavailable message if the CSV fails, and a "no organizations found" message if it yields zero valid rows.
+- [x] 6.3 Parse the CSV with header matching that is case- and whitespace-insensitive; validate rows against the `Organization` and `Region Code` rules; collect invalid rows with row numbers and reasons.
+- [x] 6.4 Aggregate distinct organizations (trimmed, case-folded) per country (bare and subdivided rows) and per subdivision; keep a per-country list of unassigned organizations; keep a list of region codes not present in the boundary data.
+- [x] 6.5 Log invalid rows and unmatched codes to the console; render the debug data-health panel only when `?debug=1` is present.
 
 ## 7. Page: world level
 
-- [ ] 7.1 Render `world.json` with an Equal Earth projection into a viewBox-scaled SVG; fill interactive countries through a `scaleThreshold` from `config.js`; non-interactive shapes gray and inert.
-- [ ] 7.2 Render the legend from the same scale with bands labeled as ranges, zero as its own neutral swatch.
-- [ ] 7.3 Implement the hover tooltip for pointer devices: name, count, up to `tooltipNameCap` names sorted alphabetically, "and N more"; "No organizations" for zero.
-- [ ] 7.4 Implement touch/narrow mode (`(hover: none)` or width under `narrowBreakpointPx`): tap selects and fills the panel with the full scrollable list; tap on empty space clears; panel height bounded so the page does not grow.
-- [ ] 7.5 Make interactive regions focusable with `aria-label` "<name>, <count> organizations"; mark the panel `aria-live="polite"`.
+- [x] 7.1 Render `world.json` with an Equal Earth projection into a viewBox-scaled SVG; fill interactive countries through a `scaleThreshold` from `config.js`; non-interactive shapes gray and inert.
+- [x] 7.2 Render the legend from the same scale with bands labeled as ranges, zero as its own neutral swatch.
+- [x] 7.3 Implement the hover tooltip for pointer devices: name, count, up to `tooltipNameCap` names sorted alphabetically, "and N more"; "No organizations" for zero.
+- [x] 7.4 Implement touch/narrow mode (`(hover: none)` or width under `narrowBreakpointPx`): tap selects and fills the panel with the full scrollable list; tap on empty space clears; panel height bounded so the page does not grow.
+- [x] 7.5 Make interactive regions focusable with `aria-label` "<name>, <count> organizations"; mark the panel `aria-live="polite"`.
 
 ## 8. Page: country level and navigation
 
-- [ ] 8.1 On click (pointer) or "View regions" (touch) for a country with count > 0 and `hasRegions` true, fetch `data/regions/<XX>.json` once, cache it in memory, and set the hash to `#<XX>`.
-- [ ] 8.2 Zoom transition: rotate the projection to the country centroid, fit to its bounds with padding, and animate; respect `prefers-reduced-motion`; keep the world layer faintly visible beneath.
-- [ ] 8.3 Render subdivisions with the shared scale and the same tooltip and panel behavior as the world level; show a header line "<N> not assigned to a region" with names when bare-country organizations exist.
-- [ ] 8.4 Back control, Escape key, and `hashchange` all return to the world; focus moves to the back control on drill and back to the country on return.
-- [ ] 8.5 Deep link: on load with a hash, render the country level directly once data is ready.
-- [ ] 8.6 Empty countries and countries without regions never drill; the panel omits "View regions" for them.
-- [ ] 8.7 Verify antimeridian countries (Russia, Fiji, United States) render contiguously at the country level; note the United States appearance for the Albers-USA open question.
+- [x] 8.1 On click (pointer) or "View regions" (touch) for a country with count > 0 and `hasRegions` true, fetch `data/regions/<XX>.json` once, cache it in memory, and set the hash to `#<XX>`.
+- [x] 8.2 Zoom transition: rotate the projection to the country centroid, fit to its bounds with padding, and animate; respect `prefers-reduced-motion`; keep the world layer faintly visible beneath.
+- [x] 8.3 Render subdivisions with the shared scale and the same tooltip and panel behavior as the world level; show a header line "<N> not assigned to a region" with names when bare-country organizations exist.
+- [x] 8.4 Back control, Escape key, and `hashchange` all return to the world; focus moves to the back control on drill and back to the country on return.
+- [x] 8.5 Deep link: on load with a hash, render the country level directly once data is ready.
+- [x] 8.6 Empty countries and countries without regions never drill; the panel omits "View regions" for them.
+- [x] 8.7 Verify antimeridian countries (Russia, Fiji, United States) render contiguously at the country level; note the United States appearance for the Albers-USA open question. (Verified 2026-09-07: Russia and Fiji contiguous via rotated fit; the US renders wide because of Alaska and Hawaii, Albers-USA remains an open question.)
 
 ## 9. Page: layout, styling, embed readiness
 
-- [ ] 9.1 `styles.css`: map fills container width with a readable max width, legend below, panel below on narrow screens, no horizontal scroll at 360 px; tooltip and panel text at 4.5:1 contrast.
-- [ ] 9.2 Post `{ type: "org-heatmap:height", height }` to `window.parent` on load and on resize; no-op when not framed.
-- [ ] 9.3 Confirm no `data/regions/*.json` request is made before a drill (network tab).
+- [x] 9.1 `styles.css`: map fills container width with a readable max width, legend below, panel below on narrow screens, no horizontal scroll at 360 px; tooltip and panel text at 4.5:1 contrast.
+- [x] 9.2 Post `{ type: "org-heatmap:height", height }` to `window.parent` on load and on resize; no-op when not framed. (Verified with test/embed.html: the page posted a 543 px preferred height into a 560 px clamp frame.)
+- [x] 9.3 Confirm no `data/regions/*.json` request is made before a drill (network tab).
 
 ## 10. Local verification
 
-- [ ] 10.1 Serve the repo root with a static server and test against the live sheet on desktop: hover, click drill, back, Escape, deep link, legend.
-- [ ] 10.2 Test at a 360 px viewport with touch emulation: tap panel, "View regions", back, panel scroll, no horizontal scroll.
-- [ ] 10.3 Test the data-unavailable path by pointing `config.js` at a bad URL, and the zero-rows path with an empty published tab copy.
-- [ ] 10.4 Open with `?debug=1` and confirm invalid rows and unmatched codes are listed; open without it and confirm the panel is hidden.
-- [ ] 10.5 Review the rendered world for disputed-border depiction and decide whether to keep Natural Earth's default.
+- [x] 10.1 Serve the repo root with a static server and test against the live sheet on desktop: hover, click drill, back, Escape, deep link, legend.
+- [x] 10.2 Test at a 360 px viewport with touch emulation: tap panel, "View regions", back, panel scroll, no horizontal scroll.
+- [x] 10.3 Test the data-unavailable path by pointing `config.js` at a bad URL, and the zero-rows path with an empty published tab copy. (Bad URL and header-only CSV both verified; config.js restored to an empty sheetCsvUrl.)
+- [x] 10.4 Open with `?debug=1` and confirm invalid rows and unmatched codes are listed; open without it and confirm the panel is hidden.
+- [x] 10.5 Review the rendered world for disputed-border depiction and decide whether to keep Natural Earth's default. (World reviewed at 1:50m; Natural Earth default kept except the Somaliland and Northern Cyprus merges. Tiny island groups such as Fiji render angular at 20 % simplification; accepted.)
 
 ## 11. Publish to GitHub Pages
 
 - [ ] 11.1 Create the public GitHub repository (account and name per Open Questions); push `main`.
 - [ ] 11.2 Enable GitHub Pages from `main` root; confirm the Pages URL loads, fetches the sheet, and serves `data/regions/KE.json` with a 200.
-- [ ] 11.3 Write `README.md`: what the map is, how data flows, how to regenerate boundaries (`npm run prep`, `npm run validate`), the "regenerate data and re-import Subdivisions together" rule, the config options, and the embed snippet with the optional height listener.
+- [x] 11.3 Write `README.md`: what the map is, how data flows, how to regenerate boundaries (`npm run prep`, `npm run validate`), the "regenerate data and re-import Subdivisions together" rule, the config options, and the embed snippet with the optional height listener.
 
 ## 12. Embed in Tithely and smoke
 

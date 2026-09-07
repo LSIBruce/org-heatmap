@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Organization Heatmap</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" id="app">
+    <header class="app-header" id="header">
+      <h1 id="title">Organization Heatmap</h1>
+      <p class="subtitle" id="subtitle">Loading map…</p>
+      <button type="button" class="back" id="back" hidden>&#8249; Back to world</button>
+      <p class="status" id="status" role="status" hidden></p>
+    </header>
+
+    <div class="map-wrap" id="map-wrap">
+      <svg id="map" role="img" aria-labelledby="title subtitle"></svg>
+      <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+    </div>
+
+    <div class="legend" id="legend" aria-label="Legend"></div>
+    <p class="unassigned" id="unassigned" hidden></p>
+
+    <section class="panel" id="panel" aria-live="polite" hidden></section>
+    <section class="debug" id="debug" aria-label="Data health" hidden></section>
+  </main>
+
+  <script src="vendor/d3.v7.min.js"></script>
+  <script src="vendor/topojson-client.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

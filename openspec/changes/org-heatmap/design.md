@@ -178,6 +178,8 @@ Node.js LTS is needed only on the developer machine for the tools. The page has 
 - **Very large per-country files** (Russia, Canada, Indonesia coastlines) → Measured: the worst is 146 KB at 20 % simplification. Budgets are enforced by the validation script so a future Natural Earth upgrade cannot silently regress.
 - **Dissolving shared ISO codes hides Natural Earth detail** (a Philippine city merges into its province; Madagascar shows 6 provinces, not 22 regions) → This matches what ISO 3166-2 defines and what an editor can look up. All constituent names remain as aliases, so nothing an editor types stops matching.
 - **Tiny places absent from the 1:50m country file** (Gibraltar is the only inhabited one) → Cannot appear in the Country dropdown. Accepted; revisit only if an organization there is added.
+- **Small island groups look angular when zoomed in** (Fiji's divisions at 20 % simplification with `keep-shapes`) → Cosmetic, visible only after drilling into such a country. If it matters, lower the simplification for countries under a size threshold in the prep script.
+- **Browsers cache `config.js`** → After changing the sheet URL or color breaks, a hard refresh may be needed to see the change; GitHub Pages sends short cache lifetimes so visitors pick it up within minutes.
 - **Tithely strips scripts** → The design needs none. Only the optional height message would be lost.
 - **Phone frame height** → `clamp()` inline height plus an internal layout that scrolls the panel rather than growing the page.
 - **Five-minute publish cache confuses editors** → Documented in the sheet README with the expectation set.
