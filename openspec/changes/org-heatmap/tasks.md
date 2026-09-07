@@ -37,7 +37,7 @@
 - [x] 5.3 Rename or add columns on the data tab so the header row matches the schema: `Organization`, `Country`, `State / Province`, `Country Code`, `Subdivision Code`, `Region Code`, `Website`, `Notes`; rename the tab to `Data`. (Done inside the generated workbook `Waterbrooke Missionary Data (map-ready).xlsx` on 2026-09-07; takes effect once it is uploaded and saved as a Google Sheet. The working tab keeps its name; a derived `Data` tab is what gets published.)
 - [x] 5.4 Add the `Country Code`, `Subdivision Code`, and `Region Code` array formulas; confirm a new row at the bottom fills itself. (Done inside the generated workbook `Waterbrooke Missionary Data (map-ready).xlsx` on 2026-09-07; takes effect once it is uploaded and saved as a Google Sheet. The working tab keeps its name; a derived `Data` tab is what gets published.)
 - [x] 5.5 Add the Country dropdown validation and the two red-cell rules; walk the existing rows and clean any red cells (retype country from the dropdown, correct or blank unmatched provinces). (Done inside the generated workbook `Waterbrooke Missionary Data (map-ready).xlsx` on 2026-09-07; takes effect once it is uploaded and saved as a Google Sheet. The working tab keeps its name; a derived `Data` tab is what gets published.)
-- [ ] 5.6 Publish only the `Data` tab as CSV; paste the URL into `config.js`; fetch it once from a browser on another origin and confirm the header row and CORS.
+- [x] 5.6 Publish only the `Data` tab as CSV; paste the URL into `config.js`; fetch it once from a browser on another origin and confirm the header row and CORS. (Published 2026-09-07; verified: Data tab only, 15 rows, no private columns, CORS allowed from lsibruce.github.io, Cache-Control max-age=300. URL is in config.js.)
 
 ## 6. Page: data layer (`app.js`)
 
@@ -95,6 +95,6 @@
 
 ## 13. Wrap-up
 
-- [ ] 13.1 Tune `colorBreaks` against real counts (total organizations and largest single region) and update the legend check.
+- [x] 13.1 Tune `colorBreaks` against real counts (total organizations and largest single region) and update the legend check. (Set to [1, 2, 3, 5, 8] on 2026-09-07: 14 placed entries, most regions 1, Minnesota 2, the US 4.)
 - [ ] 13.2 Resolve or carry forward the Open Questions in design.md (US projection, resolution, disputed borders, Website link).
 - [ ] 13.3 Final `npm run validate`, commit, and confirm the Pages deployment matches `main`.

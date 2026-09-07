@@ -25,7 +25,7 @@ Tithely page  ──<iframe>──▶  GitHub Pages serves this repository
 |---|---|
 | `sheetCsvUrl` | The published CSV URL of the sheet's `Data` tab. Empty means "no data source yet" and the page says so. |
 | `title` | Heading above the map and the browser tab title. |
-| `colorBreaks` | Thresholds for the color bands. `[1, 2, 4, 8, 16]` gives bands 0, 1, 2–3, 4–7, 8–15, 16+. |
+| `colorBreaks` | Thresholds for the color bands. The current `[1, 2, 3, 5, 8]` gives bands 0, 1, 2, 3–4, 5–7, 8+; widen them as the list grows. |
 | `palette` | Six colors: the neutral zero fill, then five sequential shades. |
 | `tooltipNameCap` | How many names the hover tooltip lists before "and N more". The tap panel always lists all of them. |
 | `narrowBreakpointPx` | Below this viewport width the tap panel is used instead of the hover tooltip. Touch-only devices always use the panel. |

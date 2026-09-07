@@ -7,15 +7,17 @@ window.ORG_HEATMAP_CONFIG = {
   // File > Share > Publish to web > choose the "Data" tab > "Comma-separated values (.csv)".
   // Leave as an empty string until the sheet is published; the page shows a
   // "data unavailable" message in that case instead of an empty map.
-  sheetCsvUrl: "",
+  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRhQ0VXtqKoXDdnG9KSH9mIFq_B72oGp8yLYwKZn5xYBZqIOLOrH0kIMFB6-9yPO0fCmiLxherfG0SP/pub?gid=1735613454&single=true&output=csv",
 
   // Title shown above the map and used as the page <title>.
   title: "Where Our Partner Organizations Are",
 
   // Color scale breaks for the organization count. A region with a count of
   // at least breaks[i] and less than breaks[i+1] gets palette[i+1]. Zero is
-  // always palette[0]. Five breaks means six bands: 0, 1, 2-3, 4-7, 8-15, 16+.
-  colorBreaks: [1, 2, 4, 8, 16],
+  // always palette[0]. Five breaks means six bands: 0, 1, 2, 3-4, 5-7, 8+.
+  // Tuned 2026-09-07 to the real data (most regions 1, a few 2, the US 4);
+  // widen the upper breaks as the list grows.
+  colorBreaks: [1, 2, 3, 5, 8],
 
   // Six colors: the first is the neutral "zero" fill, the rest form a
   // sequential ramp from light to dark. Multi-hue sequential (yellow to deep
