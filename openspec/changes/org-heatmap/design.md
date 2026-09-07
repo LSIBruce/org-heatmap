@@ -202,7 +202,7 @@ Node.js LTS is needed only on the developer machine for the tools. The page has 
 
 - **United States projection:** rotated fit (Alaska and Hawaii make the mainland small) or a dedicated Albers-USA composite for that one country (Puerto Rico then needs its own handling)? Decide after seeing the rotated fit.
 - **Color breaks:** the defaults assume small counts. Need the total organization count and the largest single-region count to set breaks that read well.
-- **Tithely embed block behavior** (task 1.1, needs someone in the Tithely admin): does an external iframe render, does its inline `style` survive, and does a `<script>` in the block run? The design assumes iframe yes, style yes, script no. Only the optional height listener depends on the answer.
+- ~~**Tithely embed block behavior**~~ Resolved 2026-09-07 by the site owner: the block renders an external iframe, keeps the inline style, and runs scripts. The embed snippet therefore includes the height listener (with an origin check on `https://lsibruce.github.io`); the iframe alone still works if the script is ever stripped.
 - **Disputed-border depiction:** the script follows ISO 3166-1 for Somaliland and Northern Cyprus and leaves Natural Earth's default elsewhere (Taiwan, Kosovo, Western Sahara, and Palestine all have ISO codes and stay as drawn; Crimea and Kashmir follow Natural Earth). Review the rendered world before launch.
 - ~~**GitHub account**~~ Resolved 2026-09-07: public repository `LSIBruce/org-heatmap`, Pages at `https://lsibruce.github.io/org-heatmap/`.
 - **Website column:** captured now; whether to surface it as a link in the panel is a cheap follow-up.

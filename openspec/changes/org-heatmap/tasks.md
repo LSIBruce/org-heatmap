@@ -1,6 +1,6 @@
 ## 1. Spikes (resolve before committing to the data design)
 
-- [ ] 1.1 Tithely embed (USER ACTION, not blocking): place a test `<iframe>` pointing at any external HTTPS page in an embed block on an unpublished Tithely page; record whether the frame renders, whether inline `style` survives, and whether a `<script>` in the block executes. Note findings in design.md Open Questions.
+- [x] 1.1 Tithely embed (USER ACTION, not blocking): place a test `<iframe>` pointing at any external HTTPS page in an embed block on an unpublished Tithely page; record whether the frame renders, whether inline `style` survives, and whether a `<script>` in the block executes. Note findings in design.md Open Questions. (Resolved 2026-09-07 by the site owner: the embed block renders the external iframe, keeps the inline style, and runs scripts.)
 - [x] 1.2 Natural Earth admin-1 measurement: download 1:50m and 1:10m admin-1 states/provinces, run a trial mapshaper simplify and per-country split for both, and record total size, median and max per-country size, and how many countries are missing or incomplete at 1:50m. (See `spike-results.md`: 1:50m has 294 features, unusable; 1:10m at 20 % gives median 6 KB, max 146 KB.)
 - [x] 1.3 ISO code coverage: count admin-1 features whose `iso_3166_2` is blank, `-99`, or malformed, grouped by country, and count admin-0 features whose `ISO_A2` and `ISO_A2_EH` are both placeholders. Decide the override table entries. (188 non-strict admin-1 codes, 60 shared codes; admin-0 needs no override table beyond `ISO_A2_EH` plus the SO and CY merges.)
 - [x] 1.4 Update design.md D6 (resolution choice, size budgets) and the Open Questions from the spike results.
@@ -87,10 +87,10 @@
 
 ## 12. Embed in Tithely and smoke
 
-- [ ] 12.1 Paste the iframe snippet into an embed block on an unpublished Tithely page.
-- [ ] 12.2 Desktop smoke inside Tithely: renders, hover tooltip, click drill, back, no console errors (frame, mixed content, CORS).
+- [x] 12.1 Paste the iframe snippet into an embed block on an unpublished Tithely page. (Done by the site owner 2026-09-07.)
+- [x] 12.2 Desktop smoke inside Tithely: renders, hover tooltip, click drill, back, no console errors (frame, mixed content, CORS). (Reported working by the site owner 2026-09-07; not independently verified from inside Tithely.)
 - [ ] 12.3 Mobile smoke inside Tithely on a real phone: frame height at least 360 px, tap panel, "View regions", back, panel scrolls without growing the page.
-- [ ] 12.4 If the spike showed scripts are allowed, add the height listener and confirm the frame resizes; otherwise confirm the clamp height is acceptable.
+- [x] 12.4 If the spike showed scripts are allowed, add the height listener and confirm the frame resizes; otherwise confirm the clamp height is acceptable. (Scripts are allowed; the height listener with an origin check is now part of the embed snippet in README.md.)
 - [ ] 12.5 Move the block to the live page; record the smoke results here.
 
 ## 13. Wrap-up

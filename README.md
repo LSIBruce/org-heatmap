@@ -34,32 +34,32 @@ Changing any of these is a commit to `config.js`; nothing else needs editing.
 
 ## Embedding in the website
 
-The page is live at <https://lsibruce.github.io/org-heatmap/>. Paste this into a Tithely embed block:
+The page is live at <https://lsibruce.github.io/org-heatmap/>. The Tithely embed block accepts both HTML and scripts (confirmed 2026-09-07), so the snippet is the iframe plus a small listener that sizes the frame to the map's preferred height:
 
 ```html
 <iframe
+  id="org-heatmap"
   src="https://lsibruce.github.io/org-heatmap/"
   title="Map of partner organizations by country and region"
   width="100%"
   style="height: clamp(360px, 70vh, 720px); border: 0; display: block;"
   loading="lazy"></iframe>
-```
-
-That is the whole embed. The `clamp()` height gives phones a tall frame and desktops a bounded one without any script. The map lays itself out to fit whatever height it gets, and on narrow screens the organization list scrolls inside the frame rather than growing the page.
-
-**Optional, only if the CMS allows scripts in the block:** the page posts its preferred height to the parent whenever it changes, as `{ type: "org-heatmap:height", height }`. This listener sizes the frame exactly:
-
-```html
 <script>
-  window.addEventListener("message", function (ev) {
-    if (!ev.data || ev.data.type !== "org-heatmap:height") return;
-    var f = document.getElementById("org-heatmap");
-    if (f) f.style.height = ev.data.height + "px";
-  });
+  (function () {
+    var frame = document.getElementById("org-heatmap");
+    window.addEventListener("message", function (ev) {
+      if (ev.origin !== "https://lsibruce.github.io") return;
+      if (!ev.data || ev.data.type !== "org-heatmap:height") return;
+      var h = Number(ev.data.height);
+      if (frame && h >= 300 && h <= 2000) frame.style.height = h + "px";
+    });
+  })();
 </script>
 ```
 
-and give the iframe `id="org-heatmap"`. `test/embed.html` is a local stand-in for the site page that exercises both the plain snippet and the listener.
+How it works: the inline `clamp()` height is what the frame has until the map loads. The map then posts `{ type: "org-heatmap:height", height }` to the parent page on load, on resize, and when it drills into a country or back, and the listener applies that height. The origin check means only messages from the map's own domain are honoured. If the script is ever removed, the iframe alone still works at the `clamp()` height; the map lays itself out to fit whatever height it gets, and on narrow screens the organization list scrolls inside the frame.
+
+`test/embed.html` is a local stand-in for the site page that runs the same listener against a local copy of the map.
 
 Deep links work: `…/#KE` opens the map already zoomed into Kenya.
 
