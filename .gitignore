@@ -11,3 +11,6 @@ Thumbs.db
 
 # personal Claude Code overrides
 .claude/settings.local.json
+
+# python bytecode from tools/build-sheet.py
+__pycache__/

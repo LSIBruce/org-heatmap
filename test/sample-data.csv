@@ -36,6 +36,7 @@ Bad Code Org,United States of America,Texas,US,,TX,,invalid: region code fails t
 No Code Org,United States of America,Texas,,,,,invalid: empty region code
 Ghost Region Org,United States of America,Nowhere,US,US-ZZ,US-ZZ,,valid code with no shape on the map
 Ghost Country Org,Atlantis,,ZZ,,ZZ,,valid code with no country on the map
+Global Ministry Org,,,,,,,no country at all: not placed, not an error
 Pacific Mission,Fiji,,FJ,,FJ,,antimeridian country
 Siberian Hope,Russia,,RU,,RU,,antimeridian country
 ,,,,,,,

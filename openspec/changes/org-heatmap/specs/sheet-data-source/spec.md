@@ -95,8 +95,12 @@ The page SHALL fetch the configured CSV on load, match headers case- and whitesp
 - **THEN** they are treated as one organization
 
 #### Scenario: Invalid rows are skipped and reported
-- **WHEN** a row has an empty `Organization` or a `Region Code` that fails the pattern
+- **WHEN** a row has an empty `Organization`, or a `Region Code` that fails the pattern, or a typed `Country` that produced no `Region Code`
 - **THEN** it does not affect any count and the browser console lists its row number and reason
+
+#### Scenario: Rows with no country are not placed and not errors
+- **WHEN** a row has an `Organization` but both `Country` and `Region Code` are empty (a global or unlocated ministry)
+- **THEN** it does not affect any count, is not reported as invalid, and is listed separately as "not placed" in the debug panel
 
 #### Scenario: Header with different casing
 - **WHEN** the CSV header reads `region code` instead of `Region Code`

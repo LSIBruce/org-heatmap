@@ -102,8 +102,9 @@
     const orgCol = cols.get("organization");
     const codeCol = cols.get("region code");
     const siteCol = cols.get("website");
+    const countryCol = cols.get("country");
     const result = {
-      rowsParsed: rows.length, validRows: 0, blankRows: 0, invalid: [],
+      rowsParsed: rows.length, validRows: 0, blankRows: 0, invalid: [], unplaced: [],
       byCountry: new Map(), bySub: new Map(), unassigned: new Map(),
       allOrgs: new Set(), missingColumns: [],
     };
@@ -131,8 +132,18 @@
         result.invalid.push({ row: rowNum, reason: "empty Organization" });
         return;
       }
+      if (!rawCode) {
+        const typedCountry = countryCol ? clean(row[countryCol]) : "";
+        if (!typedCountry) {
+          // No country given at all: a global or unlocated entry. Not an error; it is simply not on the map.
+          result.unplaced.push({ row: rowNum, org });
+          return;
+        }
+        result.invalid.push({ row: rowNum, reason: `Country "${typedCountry}" was not recognized (empty Region Code)` });
+        return;
+      }
       if (!REGION_RE.test(code)) {
-        result.invalid.push({ row: rowNum, reason: rawCode ? `Region Code "${rawCode}" is not a valid code` : "empty Region Code" });
+        result.invalid.push({ row: rowNum, reason: `Region Code "${rawCode}" is not a valid code` });
         return;
       }
       result.validRows++;
@@ -583,7 +594,7 @@
     add(`Source: ${cfg.sheetCsvUrl || "(none configured)"}`);
     if (!loadResult.agg) { add(`Status: ${loadResult.message}`); return; }
     const a = loadResult.agg;
-    add(`Rows parsed: ${a.rowsParsed}; valid: ${a.validRows}; blank: ${a.blankRows}; invalid: ${a.invalid.length}`);
+    add(`Rows parsed: ${a.rowsParsed}; valid: ${a.validRows}; blank: ${a.blankRows}; not placed (no country): ${a.unplaced.length}; invalid: ${a.invalid.length}`);
     if (state.dataOk) {
       add(`Distinct organizations: ${a.allOrgs.size}; countries with organizations: ${a.byCountry.size}; subdivisions with organizations: ${a.bySub.size}`);
     } else add(`Status: ${loadResult.message}`);
@@ -596,6 +607,7 @@
       el.debug.appendChild(ul);
     };
     list("Invalid rows", a.invalid.map((r) => `row ${r.row}: ${r.reason}`));
+    list("Not placed on the map (no country given)", a.unplaced.map((r) => `row ${r.row}: ${r.org}`));
 
     const unmatchedCountries = [...a.byCountry.keys()].filter((c) => !state.worldByCode.has(c));
     list("Country codes with no shape on the map", unmatchedCountries);
